@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>com.tom.fonter</id>
+    <name>De Fonter</name>
+    <vendor>Tom</vendor>
+    <description>Increase and decrease the font size of IntelliJ IDEA's UI, console and editor using two keyboard shortcuts.</description>
+    <version>1.0.0</version>
+    <actions>
+        <group id="Fonter.FontSizeMenu" text="De Fonter" description="Font Size menu" popup="true">
+            <add-to-group group-id="ToolsMenu" anchor="last" />
+            <action id="Fonter.IncreaseFontSizeAction" class="com.tom.fonter.IncreaseFontSizeAction" text="Increase Font Size" description="Increases font size by 2">
+                <keyboard-shortcut first-keystroke="ctrl CLOSE_BRACKET" keymap="$default" />
+            </action>
+            <action id="Fonter.DecreaseFontSizeAction" class="com.tom.fonter.DecreaseFontSizeAction" text="Decrease Font Size" description="Decreases font size by 2">
+                <keyboard-shortcut first-keystroke="ctrl OPEN_BRACKET" keymap="$default" />
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
