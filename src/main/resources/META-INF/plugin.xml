@@ -3,7 +3,6 @@
     <name>De Fonter</name>
     <vendor>Tom</vendor>
     <description>Increase and decrease the font size of IntelliJ IDEA's UI, console and editor using two keyboard shortcuts.</description>
-    <version>1.0.1</version>
     <actions>
         <group id="Fonter.FontSizeMenu" text="De Fonter" description="Font Size menu" popup="true">
             <add-to-group group-id="ToolsMenu" anchor="last" />
@@ -16,4 +15,5 @@
         </group>
     </actions>
     <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="192" until-build="900.*"/>
 </idea-plugin>
